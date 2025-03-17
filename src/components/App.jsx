@@ -60,7 +60,7 @@ export default function App() {
       }  
       </Section>
     )
-  } 
+};
 
 
 
@@ -72,74 +72,6 @@ export default function App() {
 
 
 
-
-
-
-
-
-
-
-
-// import React, { Component } from "react";
-// import Section from "./Section/Section";
-// import FeedbackOptions  from "./FeedbackOptions/FeedbackOptions ";
-// import Statistics from "./Statistics/Statistics";
-// import Notification from "./Notification/Notification";
-
-
-// export default class App extends Component {
-//   state = {
-//     good: 0,
-//     neutral: 0,
-//     bad: 0
-//   };
-   
-//   countTotalFeedback = (feedback) => {
-//     this.setState(prevState => {
-//       return {
-//         ...prevState,
-//         [feedback]: prevState[feedback] + 1
-//       }
-//     });
-
-    
-//   };
-   
-//   countPositiveFeedbackPercentage = (good, neutral, bad) => {
-//     const total = good + neutral + bad;
-//     if (total === 0) {
-//       return 0
-//     } 
-//     const positiveFeedback = (good / total) * 100;
-//     return positiveFeedback.toFixed(2);
-//   };
-
-//   render()
-   
-//   {
-//     const { good, neutral, bad } = this.state;
-//     let total = this.countPositiveFeedbackPercentage( good, neutral, bad);
-    
-//     return (
-//       <Section title="Please leave feedback">
-//       <ul>
-//         <FeedbackOptions 
-//         countTotal={this.countTotalFeedback}  
-//         option={["Good", "Neutral", "Bad"]} />
-//       </ul>
-//         {total === 0
-//         ? <Notification message="There is no feedback" />
-//         :<Statistics
-//         good={good} 
-//         neutral={neutral}
-//         bad={bad}
-//         total={total}
-//       />
-//       }  
-//       </Section>
-//     )
-//   } 
-// };
 
 
 
